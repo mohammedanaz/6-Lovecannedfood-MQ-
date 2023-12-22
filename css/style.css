@@ -18,17 +18,17 @@ header{
     margin-right: 10px;
 }
 
-.header-item-1 img{
-    width: 22px;
-    height: 22px;
+.header-item-1 .fa-bars {
+    font-size: 27px;
     margin-left: 25px;
+    color: white;
 }
 
 .header-item-2 img{
     width: 128px;
     height: 84px;
     object-fit: contain;
-    padding-left: 42px;
+    /* padding-left: 42px; */
     
 }
 
@@ -41,6 +41,10 @@ header{
 nav{
     background-color: #76be43;
     display: flex;   
+    height: 95px;
+    align-items: center;
+    justify-content: space-between;
+    
     
 }
 
@@ -48,12 +52,15 @@ nav{
     margin-left: 160px;
 }
 
+.nav-ul-menu {
+    display: flex;
+}
 
-nav li{
-    display: inline;
+
+.nav-ul-menu li{
     list-style: none;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     padding-right: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,26 +70,83 @@ nav a{
     text-decoration: none;
 }
 
-.nav-logo{
-    margin-left: 45px;
-}
 
-nav img{
-    display: inline;
+
+.nav-img-div img{
     width: 30px;
     height: 30px;
-    margin-left: 25px;
+    margin-right: 20px;
 }
 
-@media (min-width:1024px){
+.nav-img-1{
+    margin-left: 10px;
+}
+
+.dropdown .dropdown-menu li,a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown .dropdown-menu{
+    background-color: #76be43;
+}
+
+.sec-1{
+    
+}
+
+
+
+@media (min-width:1025px){
     .header-item-3 img{
         display: none;
     }
+
+    .header-item-1 .fa-bars{
+        display: none;
+    }
+
+  
+    .header-item-2 img{
+        height: 130px;
+        margin-top: 15px;
+    }
+
+    .dropdown .dropdown-menu{
+        display: none;
+    }
+
+}
+
+@media (max-width:1261px){
+    .nav-ul-menu li{
+        font-size: 11px;
+    }
+
+    .nav-img-div img{
+        width: 24px;
+        height: 24px;
+    }
+
 }
 
 @media (max-width:1024px){
     nav{
         display: none;
+    }    
+
+    .dropdown .dropdown-menu{
+        transform: translateY(-200%);
+        transition: transform ease 0.1s;
+    }
+   
+    .dropdown .dropdown-menu.is-active{
+        transform: translateY(0%);
+        text-align: center;
     }
 }
 
