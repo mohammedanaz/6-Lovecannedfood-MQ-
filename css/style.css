@@ -18,17 +18,28 @@ header{
     margin-right: 10px;
 }
 
+<<<<<<< HEAD
 .header-item-1 .fa-bars {
     font-size: 27px;
     margin-left: 25px;
     color: white;
+=======
+.header-item-1 img{
+    width: 22px;
+    height: 22px;
+    margin-left: 25px;
+>>>>>>> eb1f65eb5a38e2de75b0adcf0fa9c11c193326a1
 }
 
 .header-item-2 img{
     width: 128px;
     height: 84px;
     object-fit: contain;
+<<<<<<< HEAD
     /* padding-left: 42px; */
+=======
+    padding-left: 42px;
+>>>>>>> eb1f65eb5a38e2de75b0adcf0fa9c11c193326a1
     
 }
 
@@ -41,10 +52,13 @@ header{
 nav{
     background-color: #76be43;
     display: flex;   
+<<<<<<< HEAD
     height: 95px;
     align-items: center;
     justify-content: space-between;
     
+=======
+>>>>>>> eb1f65eb5a38e2de75b0adcf0fa9c11c193326a1
     
 }
 
@@ -52,6 +66,7 @@ nav{
     margin-left: 160px;
 }
 
+<<<<<<< HEAD
 .nav-ul-menu {
     display: flex;
 }
@@ -61,6 +76,14 @@ nav{
     list-style: none;
     color: white;
     font-size: 17px;
+=======
+
+nav li{
+    display: inline;
+    list-style: none;
+    color: white;
+    font-size: 15px;
+>>>>>>> eb1f65eb5a38e2de75b0adcf0fa9c11c193326a1
     font-weight: 500;
     padding-right: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -70,6 +93,7 @@ nav a{
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 
 
 .nav-img-div img{
@@ -132,11 +156,29 @@ nav a{
         height: 24px;
     }
 
+=======
+.nav-logo{
+    margin-left: 45px;
+}
+
+nav img{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+}
+
+@media (min-width:1024px){
+    .header-item-3 img{
+        display: none;
+    }
+>>>>>>> eb1f65eb5a38e2de75b0adcf0fa9c11c193326a1
 }
 
 @media (max-width:1024px){
     nav{
         display: none;
+<<<<<<< HEAD
     }    
 
     .dropdown .dropdown-menu{
@@ -147,6 +189,8 @@ nav a{
     .dropdown .dropdown-menu.is-active{
         transform: translateY(0%);
         text-align: center;
+=======
+>>>>>>> eb1f65eb5a38e2de75b0adcf0fa9c11c193326a1
     }
 }
 
